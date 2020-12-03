@@ -38,13 +38,13 @@ if (!$conn) {
 $sql="select source from translation";
 $res=mysqli_query($conn,$sql);
 
-echo "<form method='post' action='txttrans_submit.php'>
+echo "<form method='post' action='confirm.php'>
       <table border='1'  class='table table-hover table-light' style='float:center;width: 75%;margin:auto;text-align:center;' cellpadding='10px' cellspacing='0'>
-      <tr><th>Source</th><th>Target</th>";
+      <tr><th>Source</th><th>Target</th><th>Confirm</th>";
 if (mysqli_num_rows($res) > 0) {
     // 输出数据
     while($row = mysqli_fetch_assoc($res)) {
-        echo "<tr><td>".$row["source"]."</td><td><input type='text' name='target' style='width:350px;height:50px;'></td></tr>";
+        echo "<tr><td>".$row['source']."</td><td><input type='text' name='target' ></td><td><input type='submit' value='Confirm' name='confirm' ></td></tr>";
     }
 } else {
     echo "0 result";

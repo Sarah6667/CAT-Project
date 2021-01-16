@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>翻译记忆库</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		table,tr,td{
+			border:1px solid #000;
+		}
+	</style>
+</head>
+
+
+<div class="main">
+
+
+	<table cellspacing=0 cellpadding=0>
+		<tr>
+			<td colspan="2" align="center" style="border:1px solid #000;">翻译记忆库</td>
+		</tr>
+				<tr>
+			<td>中文</td>
+			<td>English</td>
+		</tr>
+				<tr>
+			<td>狗</td>
+			<td>dog</td>
+		</tr>
+				<tr>
+			<td>猫</td>
+			<td>cat</td>
+		</tr>
+				
+	</table>
+</div>
+
+
+</body>
+</html>
